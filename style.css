@@ -1,0 +1,36 @@
+.col-md-12 jumbotron text-center{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    color: white
+}
+
+.col-md-12.jumbotron {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(9, 172, 66);
+    opacity: .8
+}  
+
+
+
+h4 {
+    text-align: center;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.chartBox {
+    width: 200;
+    height: 150;
+}
+
+
+
+
