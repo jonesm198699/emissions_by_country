@@ -1,4 +1,4 @@
-const url = "https://github.com/jonesm198699/emissions_by_country/blob/main/emissions.json";
+const url = "https://raw.githubusercontent.com/jonesm198699/emissions_by_country/main/emissions.json";
 
 fetch(url)
 
