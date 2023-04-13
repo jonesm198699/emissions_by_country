@@ -7,8 +7,8 @@ body {
     height: 800px;
 }
 #myChart {
-      width: 10px; /* set the width of the canvas */
-      height: 10px; /* set the height of the canvas */
+      width: 250px; /* set the width of the canvas */
+      height: 200px; /* set the height of the canvas */
       margin: 0 auto; /* center the canvas horizontally */
       display: block; /* remove default margin and padding of the canvas */
           background-color: #fff;
