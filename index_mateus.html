@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>CO2 emissions by country</title>
+    <script src = "https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src = "https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src = "//cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src = "https://www.amcharts.com/lib/4/geodata/worldUltra.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "static/css/style_mateus.css">
+
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12 jumbotron text-center">
+                <h1>CO2 emissions by country</h1>
+                <p>Use the interactive selection box to explore the different sources of emission by country since 1990.</p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-me-2">
+                <div class = "well">
+                    <h4>Source:</h4>
+                    <select id="selector">
+                        <option value="total">Total</option>
+                        <option value="coal">Coal</option>
+                        <option value="oil">Oil</option>
+                        <option value="gas">Gas</option>
+                        <option value="cement">Cement</option>
+                        <option value="flaring">Flaring</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div> 
+        <div class = "row">
+            <div class = "col-md-5">
+                <div id = "chartdiv_mat"></div>
+            </div>
+        </div>
+    </div>
+
+     
+    <script type = "text/javascript" src = "static_mateus/js/app_mateus.js"></script>
+    
+</body>
+
+</html>
