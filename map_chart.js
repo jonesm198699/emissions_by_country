@@ -142,7 +142,7 @@ setTimeout(() => {
 // Create the map chart with amCharts 4 library
 am4core.useTheme(am4themes_animated);
 
-var chart = am4core.create("chartdiv_mat", am4maps.MapChart);
+var chart = am4core.create("chartdiv_map", am4maps.MapChart);
 chart.hiddenState.properties.opacity = 0;
 
 chart.geodata = am4geodata_worldUltra;
