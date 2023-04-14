@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src = "https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src = "https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src = "//cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src = "https://www.amcharts.com/lib/4/geodata/worldUltra.js"></script>
+    
+
+</head>
+
+
+
+
+<body>
+  <div class="container">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>CO2 Emissions by Country</h1>
+        <p>Exploring Sources of Emissions by Country Since 1990</p>
+    </div>
+  </div>
+  
+    <div class="buffer">
+      <canvas id="Chart" ></canvas>
+      <link rel="stylesheet" type="text/css" href="styles_gp3.css">
+    </div>
+    <div class="buffer">
+      <svg id="scatterplot" ></svg>
+      <canvas id="myChart" ></canvas> 
+        <div id="message-container"></div>
+          <div id="info-container"></div>
+    </div>
+    <div>
+      <h4>Source:</h4>
+        <select id="selector">
+          <option value="total">Total</option>
+          <option value="coal">Coal</option>
+          <option value="oil">Oil</option>
+          <option value="gas">Gas</option>
+          <option value="cement">Cement</option>
+          <option value="flaring">Flaring</option>
+          <option value="other">Other</option>
+        </select>
+    </div>   
+    <div class="buffer">
+      <div id = "chartdiv_mat"></div>
+    </div>
+    <div class="buffer">
+      <canvas id="barChartj"></canvas>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="buffer">
+          <div><canvas id="topChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="buffer">
+          <div><canvas id="bottomChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+<script type="module" src="line_graph.js"></script>
+<script type="module" src="app.js"></script>
+<script type = "text/javascript" src = "mateus.js"></script>
+<script type="module" src="bar_plotsj.js"></script>
+<script type="module" src="jnj.js"></script>
+
+</body>
+
+</html>
