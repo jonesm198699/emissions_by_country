@@ -142,7 +142,7 @@ setTimeout(() => {
 // Create the map chart with amCharts 4 library
 am4core.useTheme(am4themes_animated);
 
-var chart = am4core.create("chartdiv_map", am4maps.MapChart);
+var chart = am4core.create("mateus_chart", am4maps.MapChart);
 chart.hiddenState.properties.opacity = 0;
 
 chart.geodata = am4geodata_worldUltra;
@@ -207,6 +207,8 @@ chart.zoomControl.valign = "bottom";
 
 var selector = document.getElementById("selector");
 
+var selectedDataSource = [];
+
 selector.addEventListener("change", function(event){
   var selectedValue = event.target.value;
   if (selectedValue === "total") {
@@ -237,6 +239,5 @@ selector.dispatchEvent(event);
 // excludes Antarctica
 polygonSeries.exclude = ["AQ"];
 
-}, 500);
 
-console.log(emissionsArray)
+}, 500);

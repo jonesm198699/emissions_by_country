@@ -53,7 +53,7 @@ fetch(url)
        // console.log(Totals);
 
   // ******* Chart for Top 5 Contrubutors *******
-      var canvasElement = document.getElementById("topChart");
+      var canvasElement = document.getElementById("julie_topChart");
       var config = {
         type: "bar",
         data: {labels: Countries, 
@@ -104,7 +104,7 @@ fetch(url)
 
   
 
-    var canvasElement = document.getElementById("bottomChart");
+    var canvasElement = document.getElementById("julie_bottomChart");
     var config = {
       type: "bar",
       data: {labels: revCountries, 

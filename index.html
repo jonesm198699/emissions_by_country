@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src = "https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+<script src = "https://d3js.org/d3.v7.min.js"></script>
+<script src = "https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src = "https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src = "https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src = "https://www.amcharts.com/lib/4/geodata/worldUltra.js"></script>
+
+</head>
+
+<body>
+  
+<div class = "container">
+    <div class = "col-md-12 jumbotron text-center">
+      <h1>CO2 Emissions by Country</h1>
+      <p>Exploring Sources of Emissions by Country Since 1990</p>
+  </div>
+</div>
+
+<div class = "buffer">
+  <canvas id = "mark_chart"></canvas>
+</div>
+
+<div class = "buffer">
+  <canvas id = "sam_chart"></canvas> 
+  <div id = "message-container"></div>
+  <div id = "info-container"></div>
+</div>
+
+<div>
+  <h4>Source:</h4>
+    <select id = "selector">
+      <option value = "total">Total</option>
+      <option value = "coal">Coal</option>
+      <option value = "oil">Oil</option>
+      <option value = "gas">Gas</option>
+      <option value = "cement">Cement</option>
+      <option value = "flaring">Flaring</option>
+      <option value = "other">Other</option>
+    </select>
+</div>
+<div class = "row">
+  <div class = "col-md-6">  
+    <div id = "mateus_chart" style = "height: 750px;"></div>
+  </div>
+</div>
+
+<div class = "buffer">
+  <canvas id = "jakob_chart"></canvas>
+</div>
+  
+<div class = "row">
+  <div class = "col-md-6">
+    <div class = "buffer">
+      <div><canvas id = "julie_topChart"></canvas></div>
+    </div>
+  </div>
+</div>  
+<div class = "row">
+  <div class = "col-md-6">
+    <div class = "buffer">
+      <div><canvas id = "julie_bottomChart"></canvas></div>
+    </div>
+  </div>
+</div>
+ 
+<script type = "module" src = "static_js/mark_chart.js"></script>
+<script type = "module" src = "static_js/sam_chart.js"></script>
+<script type = "module" src = "static_js/mateus_chart.js"></script>
+<script type = "module" src = "static_js/jakob_chart.js"></script>
+<script type = "module" src = "static_js/julie_chart.js"></script>
+
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+</body>
+
+</html>

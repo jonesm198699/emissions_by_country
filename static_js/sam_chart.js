@@ -33,7 +33,7 @@ var xyValues = [
   {x:	2020	,y:	35264.08573, info: 'In 2020, China had the highest emissions with a total of 10956.21.'},
   {x:	2021	,y:	37123.85035, info: 'In 2021, China had the highest emissions with a total of 11472.37.'}
 ];
-var chart = new Chart("myChart", {
+var chart = new Chart("sam_chart", {
   type: "scatter",
   data: {
     datasets: [{
@@ -97,7 +97,7 @@ var chart = new Chart("myChart", {
       }
     });
 
-    var canvas = document.getElementById("myChart");
+    var canvas = document.getElementById("sam_chart");
     var infoContainer = document.getElementById("info-container");
     
     canvas.addEventListener("click", function(evt) {
