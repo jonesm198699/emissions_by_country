@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/jonesm198699/emissions_by_country/main/emissions.json";
+const url = "https://raw.githubusercontent.com/jonesm198699/emissions_by_country/main/data/emissions.json";
 
 fetch(url)
 
@@ -120,8 +120,3 @@ fetch(url)
 
  
     });
-
-
-
-
-
