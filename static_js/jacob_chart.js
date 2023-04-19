@@ -3,7 +3,7 @@
 const countries = ["Australia", "Austria", "Belarus", "Belgium", "Brazil", "Bulgaria", "Canada", "China", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Italy", "Japan", "Kazakhstan", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "South Korea", "Romania", "Russia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Taiwan", "Turkey", "Ukraine", "United Kingdom", "USA"];
 
 // Create chart with data sets
-new Chart ("jakob_chart", {
+new Chart ("jacob_chart", {
   type: "bar",
   data: {
     labels: countries,
