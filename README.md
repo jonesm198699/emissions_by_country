@@ -6,7 +6,7 @@ In out project, we explored CO2 emissions usage by country and source type rangi
 
 
 ## Follow our link to view our interactive page 
-
+https://jonesm198699.github.io/emissions_by_country/
 
 
 
